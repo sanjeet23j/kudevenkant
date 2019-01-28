@@ -51,7 +51,7 @@ employees :any[]
     this.employees =[
       {code : 'emp101' , name : 'Sanjeet' , DOB: '02-01-1994', gender : 'Male', salary : '30k'},
       {code : 'emp102' , name : 'Nishu' , DOB: '12-01-1994', gender : 'Female', salary : '40k'},
-      {code : 'emp103' , name : 'Sanjana' , DOB: '22-11-1990', gender : 'Female', salary : '50k'},
+      {code : 'emp103' , name : 'Sanjana' , DOB: '11-21-1990', gender : 'Female', salary : '50k'},
       {code : 'emp104' , name : 'Neha' , DOB: '02-12-1991', gender : 'Female', salary : '60k'},
       {code : 'emp105' , name : 'Tom' , DOB: '02-09-1997', gender : 'Male', salary : '20k'},
       {code : 'emp106' , name : 'Jerry' , DOB: '20-01-1996', gender : 'Female', salary : '30k'},

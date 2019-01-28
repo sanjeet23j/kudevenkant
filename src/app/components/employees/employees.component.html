@@ -25,6 +25,7 @@
     <td>{{age}}</td>
   </tr>
 </table>
+<!--
 <button (click) =  "toogleDetails()">{{showDetails ? 'Hide' : 'Show'}} Details</button>
 <h1>Class binding</h1>
 
@@ -49,6 +50,8 @@ you enterd: {{name}}
 <input type="text" [(ngModel)] = 'name'>
 <br>
 You enterd: {{name}}
+
+-->
 <h1>*ngFor structureal directives</h1>
 
 <table>
@@ -63,9 +66,9 @@ You enterd: {{name}}
   </thead>
     <tbody>
         <tr *ngFor = 'let employee of employees'>
-          <td>{{employee.code}}</td>
+          <td>{{employee.code | uppercase}}</td>
           <td>{{employee.name}}</td>
-          <td>{{employee.DOB}}</td>
+          <td>{{employee.DOB | date : 'fullDate'}}</td>
           <td>{{employee.gender}}</td>
           <td>{{employee.salary}}</td>
           </tr>
