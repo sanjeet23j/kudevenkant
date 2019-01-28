@@ -1,0 +1,32 @@
+table{
+    border-collapse: collapse;
+
+}
+td,thead{
+    border: 1px solid black;
+    padding: 2px;
+}
+.btn{
+color: red;
+padding: 5px 20px;
+font-weight: bold;
+
+}
+.btnBuleColor{
+color: blue;
+padding: 8px 30px;
+
+}
+.boldClass{
+    font-weight: 800;
+    font-family: italic;
+}
+.singleClassBind{
+    font-family: italic;
+    color: pink;
+    font-size: 22px;
+    padding: 5px 20px;
+}
+.applySinglClass1{
+margin: 100px;
+}
