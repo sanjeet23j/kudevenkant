@@ -53,7 +53,14 @@ You enterd: {{name}}
 
 -->
 <h1>*ngFor structureal directives</h1>
+<app-count-employee
+[all] ="getTotaleEmployeesCount()"
+[male] = "getTotaleMaleEmployeesCount()"
+[female] = "getTotaleFemaleEmployeesCount()"
 
+
+></app-count-employee>
+<br>
 <table>
   <thead>
     <tr>
@@ -67,10 +74,10 @@ You enterd: {{name}}
     <tbody>
         <tr *ngFor = 'let employee of employees'>
           <td>{{employee.code | uppercase}}</td>
-          <td>{{employee.name}}</td>
-          <td>{{employee.DOB | date : 'fullDate'}}</td>
+          <td>{{employee.name | emplTitlePepe : employee.gender }}</td>
+          <td>{{employee.DOB | date: 'dd/MM/y'}}</td>
           <td>{{employee.gender}}</td>
-          <td>{{employee.salary}}</td>
+          <td>{{employee.salary | currency : 'INR' : true : '1.2-2'}}</td>
           </tr>
           <tr *ngIf = '!employees || employees.length == 0'>
               <td colspan="5" >No employees to display</td>
