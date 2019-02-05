@@ -1,5 +1,4 @@
 import { Component,  Input } from '@angular/core';
-import { all } from 'q';
 
 @Component({
   selector: 'app-count-employee',
@@ -15,8 +14,10 @@ export class CountEmployeeComponent {
 */
   @Input()
   all :number;
+
   @Input()
   male:number;
+
   @Input()
   female:number
 
