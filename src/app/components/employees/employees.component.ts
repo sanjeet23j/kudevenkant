@@ -47,7 +47,7 @@ employees :any[]
       ];
       
   }
-  getEmployee():void{
+  getEmployees():void{
     this.employees =[
       {code : 'emp101' , name : 'Sanjeet' , DOB: '02-01-1994', gender : 'Male', salary : '30000.345'},
       {code : 'emp102' , name : 'Nishu' , DOB: '12-01-1994', gender : 'Female', salary : '40000.691'},
@@ -59,18 +59,23 @@ employees :any[]
       {code : 'emp107' , name : 'Nandani' , DOB: '6-31-2013', gender : 'Female', salary : '60894.698'}
     ]
   }
-
-
   getTotaleEmployeesCount():number{
     return this.employees.length
   }
   
 getTotaleMaleEmployeesCount():number{
-  return this.employees.filter(e => e.gender === "male").length;
+  return this.employees.filter(e => e.gender === "Male").length;
 }
 
 getTotaleFemaleEmployeesCount():number{
-  return this.employees.filter(e => e.gender === "femle").length;
+  return this.employees.filter(e => e.gender === "Female").length;
+}
+
+selectedEmployeeCountRadioButton:string = "All";
+
+onEmployeeCountRadioButtonChange(selectedRadioButtonValue :string):void{
+  this.selectedEmployeeCountRadioButton = selectedRadioButtonValue;
+
 }
 
 }

@@ -1,12 +1,12 @@
 <span>Show:</span>
 
-<input type="radio" name="radio"  >
+<input type="radio" name="radio" value="All" [(ngModel)] = "selectedRadioButtonValue" (change) = "onRadiobuttonSelectionChange()" >
 <span> All{{ '(' + all + ')' }} </span>
 
 
-<input type="radio" name="radio">
+<input type="radio" name="radio" value="Male" [(ngModel)] = "selectedRadioButtonValue" (change) = "onRadiobuttonSelectionChange()">
 <span> Male{{ '(' + male + ')' }} </span>
 
 
-<input type="radio" name="radio">
+<input type="radio" name="radio" value="Female" [(ngModel)] = "selectedRadioButtonValue" (change) = "onRadiobuttonSelectionChange()" > 
 <span> Female{{ '(' + female + ')' }} </span>
