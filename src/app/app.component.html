@@ -4,10 +4,14 @@
     Welcome to {{ title }}!
   </h1>
   </div>
-<router-outlet></router-outlet>
-
 <!-----------------Directives----------->
 <div class="container">
   <app-employees></app-employees>
 </div>
-  
+  <ul class="nav nav-tabs" >
+    <li> <a routerLink = "home"> Home</a> </li>
+    <li> <a  rounterLink = "employees">Employees</a> </li>
+
+  </ul>
+
+  <router-outlet></router-outlet>
